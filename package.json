@@ -47,6 +47,7 @@
   "devDependencies": {
     "@types/uniqid": "^5.3.2",
     "daisyui": "^3.2.1",
+    "encoding": "^0.1.13",
     "supabase": "^1.75.3"
   }
 }

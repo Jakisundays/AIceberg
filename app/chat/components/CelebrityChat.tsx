@@ -50,7 +50,7 @@ const CelebrityChat = ({
      router.push("/chat");
      return authModal.onOpen();
     }
-  }, [user]);
+  }, [user, router, authModal]);
 
   useEffect(() => {
     msgRef.current?.scrollIntoView({
