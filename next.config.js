@@ -1,4 +1,13 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  images: {
+    domains: ["fwrxlylgwpfyowgxzyta.supabase.co"],
+  },
+  webpack: (config) => {
+    config.externals = [...config.externals, "hnswlib-node"];
 
-module.exports = nextConfig
+    return config;
+  },
+};
+
+module.exports = nextConfig;
