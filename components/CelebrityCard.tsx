@@ -49,7 +49,7 @@ const CelebrityCard = ({
 
         <button
           onClick={handleChat}
-          aria-aria-label="chat"
+          aria-label="chat"
           disabled={disabled}
           className="btn btn-primary transition"
         >
