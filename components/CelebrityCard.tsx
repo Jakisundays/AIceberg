@@ -41,7 +41,7 @@ const CelebrityCard = ({
           width={500}
           height={500}
           className="rounded-xl"
-          priority
+          priority={name === "Kanye West"}
         />
       </figure>
       <div className="card-body items-center text-center">
