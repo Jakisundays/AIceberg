@@ -40,6 +40,7 @@ const CelebrityCard = ({
           alt="Artist"
           width={500}
           height={500}
+          placeholder="blur"
           className="rounded-xl"
           priority={name === "Kanye West"}
         />
