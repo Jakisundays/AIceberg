@@ -1,7 +1,6 @@
 import CelebrityCard from "@/components/CelebrityCard";
 import Header from "@/components/Header";
 
-
 export default async function Chat() {
   return (
     <section className="bg-neutral-900 rounded-lg h-full w-full overflow-hidden overflow-y-auto">
@@ -26,8 +25,7 @@ export default async function Chat() {
         <CelebrityCard
           name="Drake"
           description="Count your blessings, not problems."
-          // image="/images/drake.webp"
-          image="/images/taylor.webp"
+          image="/images/drake.webp"
           href="/chat/drake"
         />
       </div>
