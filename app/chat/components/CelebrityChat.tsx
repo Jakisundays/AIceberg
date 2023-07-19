@@ -6,7 +6,7 @@ import { useUser } from "@/hooks/useUser";
 import { useChat } from "ai/react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { use, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 
 interface CelebrityProps {
   api: string;
@@ -47,8 +47,8 @@ const CelebrityChat = ({
 
   useEffect(() => {
     if (!user) {
-     router.push("/chat");
-     return authModal.onOpen();
+      router.push("/chat");
+      return authModal.onOpen();
     }
   }, [user, router, authModal]);
 
@@ -88,7 +88,8 @@ const CelebrityChat = ({
                 className="object-cover"
                 fill
                 src={celebrityPic}
-                alt="Playlist"
+                alt="Celebrity"
+                placeholder="blur"
               />
             </div>
             <div className="flex flex-col gap-y-2 mt-4 md:mt-0">
@@ -111,7 +112,6 @@ const CelebrityChat = ({
         </div>
       </Header>
       <div className="w-full h-[59%] sm:h-[69%] flex flex-col justify-between px-6 py-4 2xl:py-6 2xl:pt-26 xl:px-24 lg:px-24 md:px-16 sm:px-4 stretch gap-4">
-        {/* <div className="w-full h-[63%] sm:h-[69%] lg:h-[68%] xl:h-[72%] 2xl:h-[85%] flex flex-col justify-between px-6 py-4 2xl:py-6 2xl:pt-26 xl:px-24 lg:px-24 md:px-16 sm:px-4 stretch gap-4"> */}
         <div className="overflow-y-auto h-full">
           {messages.length > 0
             ? messages.map((m, i) => {
@@ -139,8 +139,9 @@ const CelebrityChat = ({
                           <Image
                             src={celebrityPic}
                             fill
-                            alt="Kanye West"
+                            alt={name}
                             className="rounded-full"
+                            placeholder = 'blur'
                           />
                         </div>
                       </div>
