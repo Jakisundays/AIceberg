@@ -1,14 +1,14 @@
 "use client";
 import useAuthModal from "@/hooks/useAuthModal";
 import { useUser } from "@/hooks/useUser";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 interface CelebrityCardProps {
   name: string;
   description: string;
-  image: string | StaticImageData;
+  image: string;
   href: string;
   disabled?: boolean;
 }
@@ -29,6 +29,8 @@ const CelebrityCard = ({
     }
     return router.push(href);
   };
+
+  console.log({image})
 
   return (
     <div className="card w-72 bg-neutral-400/5 hover:bg-neutral-400/10 transition shadow-xl">
