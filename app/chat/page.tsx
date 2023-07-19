@@ -13,7 +13,7 @@ export default async function Chat() {
         <CelebrityCard
           name="Kanye West"
           description="When I talk it's like a painting."
-          image="/images/kanye.webp"
+          image="/images/Kanye.webp"
           href="/chat/kanye"
         />
         <CelebrityCard
@@ -25,7 +25,7 @@ export default async function Chat() {
         <CelebrityCard
           name="Drake"
           description="Count your blessings, not problems."
-          image="/images/drake.webp"
+          image="/images/Drake.webp"
           href="/chat/drake"
         />
       </div>
