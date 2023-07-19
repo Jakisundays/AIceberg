@@ -4,14 +4,14 @@ import Header from "@/components/Header";
 import useAuthModal from "@/hooks/useAuthModal";
 import { useUser } from "@/hooks/useUser";
 import { useChat } from "ai/react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { useRouter } from "next/navigation";
 import { useEffect, useRef } from "react";
 
 interface CelebrityProps {
   api: string;
   initialMessage: string;
-  celebrityPic: string;
+  celebrityPic: string | StaticImageData;
   name: string;
 }
 

@@ -1,14 +1,14 @@
 "use client";
 import useAuthModal from "@/hooks/useAuthModal";
 import { useUser } from "@/hooks/useUser";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 interface CelebrityCardProps {
   name: string;
   description: string;
-  image: string;
+  image: string | StaticImageData;
   href: string;
   disabled?: boolean;
 }

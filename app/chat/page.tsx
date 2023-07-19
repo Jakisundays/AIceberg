@@ -1,5 +1,7 @@
 import CelebrityCard from "@/components/CelebrityCard";
 import Header from "@/components/Header";
+import drakeImg from "../../public/images/drake.webp";
+import kanyeImg from "../../public/images/kanye.webp";
 
 export default async function Chat() {
   return (
@@ -13,7 +15,7 @@ export default async function Chat() {
         <CelebrityCard
           name="Kanye West"
           description="When I talk it's like a painting."
-          image="/images/kanye.webp"
+          image={kanyeImg}
           href="/chat/kanye"
         />
         <CelebrityCard
@@ -25,7 +27,7 @@ export default async function Chat() {
         <CelebrityCard
           name="Drake"
           description="Count your blessings, not problems."
-          image="/images/drake.webp"
+          image={drakeImg}
           href="/chat/drake"
         />
       </div>
