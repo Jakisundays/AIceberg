@@ -21,16 +21,16 @@ const CelebrityCard = ({
   disabled = false,
 }: CelebrityCardProps) => {
   const authModal = useAuthModal();
+
   const { user } = useUser();
   const router = useRouter();
+
   const handleChat = () => {
     if (!user) {
       return authModal.onOpen();
     }
     return router.push(href);
   };
-
-  console.log({image})
 
   return (
     <div className="card w-72 bg-neutral-400/5 hover:bg-neutral-400/10 transition shadow-xl">
@@ -49,6 +49,7 @@ const CelebrityCard = ({
 
         <button
           onClick={handleChat}
+          aria-aria-label="chat"
           disabled={disabled}
           className="btn btn-primary transition"
         >

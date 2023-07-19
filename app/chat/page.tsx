@@ -9,7 +9,7 @@ export default async function Chat() {
           <h1 className="text-3xl">Choose a celebrity to chat with</h1>
         </div>
       </Header>
-      <div className="grid grid-col-2 sm:grid-cols-2 md:grid-cols-1 xl:grid-cols-3 2xl:grid-cols-4 gap-2 mt-6 justify-items-center">
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-2 mt-2 justify-items-center py-3">
         <CelebrityCard
           name="Kanye West"
           description="When I talk it's like a painting."
