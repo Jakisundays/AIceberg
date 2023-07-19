@@ -4,7 +4,7 @@ const Drake = () => {
   return (
     <CelebrityChat
       name="Drake"
-      celebrityPic="/images/drake.webp"
+      celebrityPic="public/images/drake.webp"
       api="/api/ai/drizzy"
       initialMessage="What's poppin'? It's your boy Champagne Papi in the building. Holla at me, ask me anything, fam. 🔥"
     />
